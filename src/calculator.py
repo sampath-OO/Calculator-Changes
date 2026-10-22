@@ -9,3 +9,17 @@ def add(a: float, b: float) -> float:
 def subtract(a: float, b: float) -> float:
     """Return the difference of two numbers."""
     return a - b
+
+def multiply(a: float, b: float) -> float:
+    """Return the product of two numbers."""
+    return a * b
+
+def divide(a: float, b: float) -> float:
+    """Return the quotient of two numbers.
+    
+    Raises:
+        ValueError: If denominator b is zero.
+    """
+    if b == 0:
+        raise ValueError("Cannot divide by zero.")
+    return a / b
